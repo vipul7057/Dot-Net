@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Label Content="First Name" x:Name="lblfirstname" HorizontalAlignment="Left" Margin="108,82,0,0" VerticalAlignment="Top"/>
+        <Label Content="Last Name" x:Name="lbllastname" HorizontalAlignment="Left" Margin="108,126,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.778,2.537"/>
+        <Label Content="Full Name" x:Name="lblfullname"  HorizontalAlignment="Left" Margin="108,176,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txtfirstname" Height="23" Margin="240,82,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="txtfirstname_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txtfullname" Height="23" Margin="240,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txtlastname" Height="23" Margin="240,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="txtlastname_TextChanged"/>
+        <Button Content="Show Full Name" x:Name="btnfullname" HorizontalAlignment="Left" Margin="108,238,0,0" VerticalAlignment="Top" Width="252" Height="35" Click="btnfullname_Click"/>
+        
+    </Grid>
+</Window>
