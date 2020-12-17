@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "hello";
+}
+
+<h2>hello</h2>
+<br />
+@ViewBag.name <br />
+@{
+    int id = ViewBag.id;
+    string re;
+    if (id % 2 == 0)
+    {
+        re = "even";
+    }
+    else
+    {
+        re = "odd";
+    }
+} 
+@ViewBag.id is @re
+
+<table>
+    @for (int i = 1; i <= 10; i++)
+    {
+        <tr>
+            <td>@i</td>
+            <td>*</td>
+            <td>2</td>
+            <td> = </td>
+            <td>@(i*2)</td>
+        </tr>
+    }
+   
+</table>
